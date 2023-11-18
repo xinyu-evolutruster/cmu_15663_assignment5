@@ -205,7 +205,7 @@ if test_sigma:
 # %%
 # Normal integration
 
-sigma = 15
+sigma = 16
 
 G = np.array([[1., 0., 0.], [0., 1., 0.], [-0.12, 0.0, 1.0]])
 

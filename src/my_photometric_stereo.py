@@ -30,7 +30,7 @@ def display_albedo_and_normal(A, N, display_A=True):
     N_new = (N + 1) / 2
 
     if display_A:
-        plt.imshow(A, cmap='gray', vmin=0.0, vmax=1.0)
+        plt.imshow(A * 10, cmap='gray', vmin=0.0, vmax=1.0)
         plt.axis('off')
         plt.show()
 
@@ -87,7 +87,7 @@ def display_surface(Z):
 
 
 # %%
-# Load the images of the diffused object
+# Load the images of a lambertian object
 data_dir = '../data/toilet_paper'
 num_imgs = 7
 input_imgs = []
@@ -111,7 +111,7 @@ plt.axis('off')
 plt.show()
 
 # %%
-# Load the images of the object with somehow strong convavities
+# Load the images of the object with some glossiness
 data_dir = '../data/plush'
 num_imgs = 8
 input_imgs = []
@@ -135,7 +135,7 @@ plt.axis('off')
 plt.show()
 
 # %%
-# Load the images of the object with somehow strong convavities
+# Load the images of a lambertian object with more complicated shape
 data_dir = '../data/cupboard'
 num_imgs = 8
 input_imgs = []
