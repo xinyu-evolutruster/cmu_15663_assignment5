@@ -200,7 +200,7 @@ if test_sigma:
         B_int = G_F @ B_int
 
         A_int, N_int = pseudo_normal_to_albedo_and_normal(B_int, h, w)
-        display_albedo_and_normal(A_int, N_int, 10)
+        # display_albedo_and_normal(A_int, N_int, 10)
 
 # %%
 # Normal integration
